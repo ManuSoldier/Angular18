@@ -1,0 +1,106 @@
+
+.card-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .p-card {
+    width: 100%;
+    max-width: 70rem; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .p-table {
+    font-size: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+  }
+  
+  .p-table thead th {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .p-table tbody td {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+  }
+  
+  .p-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+
+  .action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  .p-button {
+    font-size: 1.8rem;  
+    padding: 12px 24px; 
+    min-width: 120px;   
+    height: 45px;       
+  }
+  
+  .p-button-rounded {
+    border-radius: 20px;
+  }
+  
+  .p-button-outlined {
+    border: 2px solid #ddd;
+  }
+  
+  .p-button-warning {
+    background-color: #ffcc00;
+    color: #333;
+    border-color: #ffcc00;
+  }
+  
+  .p-button-warning:hover {
+    background-color: #e0b200;
+    border-color: #e0b200;
+  }
+  
+  .p-button-success {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+  }
+  
+  .p-button-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  .p-button-danger {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+  }
+  
+  .p-button-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  
+  .p-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  

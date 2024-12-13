@@ -1,0 +1,46 @@
+<p-table [value]="userList.ml_userRegistration" [paginator]="true" [rows]="5" [rowsPerPageOptions]="[5, 10, 20]"
+         [tableStyle]="{ 'min-width': '70rem', 'border-radius': '8px' }">
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="user_ID" style="width: 15%">
+                user_ID <p-sortIcon field="u_ID"></p-sortIcon>
+            </th>
+            <th pSortableColumn="full_name" style="width: 15%">
+                Full Name <p-sortIcon field="full_name"></p-sortIcon>
+            </th>
+            <th pSortableColumn="email" style="width: 20%">
+                Email <p-sortIcon field="email"></p-sortIcon>
+            </th>
+            <th pSortableColumn="phone_number" style="width: 15%">
+                Phone <p-sortIcon field="phone_number"></p-sortIcon>
+            </th>
+            <th pSortableColumn="date_of_birth" style="width: 15%">
+                Date of Birth <p-sortIcon field="date_of_birth"></p-sortIcon>
+            </th>
+            <th pSortableColumn="address" style="width: 20%">
+                Address <p-sortIcon field="address"></p-sortIcon>
+            </th>
+            <th pSortableColumn="profile_picture" style="width: 10%">
+                Profile Picture <p-sortIcon field="profile_picture"></p-sortIcon>
+            </th>
+            <th style="width: 10%">Actions</th>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.u_ID}}</td>
+            <td>{{ user.full_name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone_number }}</td>
+            <td>{{ user.date_of_birth }}</td>
+            <td>{{ user.address }}</td>
+            <td><img [src]="user.profile_picture" alt="Profile Picture" style="width: 50px; height: 50px; border-radius: 50%"></td>
+            <td class="action-buttons">
+                <button pButton icon="pi pi-pencil" label="Edit" class="p-button-rounded p-button-outlined p-button-warning p-mr-2" (click)="editUser(user)"></button>
+                <button pButton icon="pi pi-save" label="Save" class="p-button-rounded p-button-outlined p-button-success p-mr-2" (click)="saveUser(user)"></button>
+                <button pButton icon="pi pi-trash" label="Delete" class="p-button-rounded p-button-outlined p-button-danger" (click)="deleteUser(user)"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

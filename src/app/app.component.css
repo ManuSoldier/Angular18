@@ -1,0 +1,57 @@
+
+::ng-deep .p-menubar {
+    background-color: #ffffff !important; 
+    color: #333333 !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; 
+    border-bottom: 2px solid #f1f1f1 !important; 
+    padding: 10px 0 !important; 
+    display: flex; 
+    justify-content: flex-end; 
+  }
+  
+  
+  ::ng-deep .p-menubar .p-menuitem {
+    font-size: 1rem; 
+    color: #333333 !important; 
+    font-weight: 600; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s, color 0.3s ease; 
+    border-radius: 5px; 
+  }
+  
+  
+  ::ng-deep .p-menubar .p-menuitem:hover {
+    background-color: #f7f7f7 !important; 
+    color: #007bff !important; 
+  }
+  
+  
+  ::ng-deep .p-menubar .p-menuitem-active {
+   
+    color: white !important; 
+    border-radius: 5px; 
+  }
+  
+  
+  ::ng-deep .p-menubar .p-menuitem .p-submenu {
+    background-color: #ffffff !important; 
+    color: #333333 !important; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; 
+  }
+  
+  
+  ::ng-deep .p-menubar .p-menuitem .p-submenu .p-menuitem:hover {
+    background-color: #f7f7f7 !important; 
+    color: #007bff !important; 
+  }
+  
+  
+  ::ng-deep .p-menubar .p-menuitem .p-dropdown {
+    color: #007bff !important; 
+  }
+  
+  
+  ::ng-deep .p-menubar .p-menuitem .p-dropdown:hover .p-dropdown-icon {
+    color: #0056b3 !important; 
+  }
+  

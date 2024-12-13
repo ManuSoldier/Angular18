@@ -1,0 +1,37 @@
+<div class="card form-card">
+    <h2 class="form-title">Add New User  <i class="pi pi-user-plus" style="margin-right: 8px; font-size: 2rem;"></i></h2>
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+     
+      <div class="p-field p-float-label">
+        <input id="name" type="text" pInputText [(ngModel)]="user.name" name="name" required />
+        <label for="name">Name</label>
+      </div>
+  
+    
+      <div class="p-field p-float-label">
+        <input id="email" type="email" pInputText [(ngModel)]="user.email" name="email" required />
+        <label for="email">Email</label>
+      </div>
+  
+    
+      <div class="p-field p-float-label">
+        <input id="phone" type="text" pInputText [(ngModel)]="user.phone" name="phone" required />
+        <label for="phone">Phone</label>
+      </div>
+  
+      <div class="p-field p-float-label">
+        <p-dropdown
+          [options]="roles"
+          [(ngModel)]="user.role"
+          name="role"
+          placeholder="Select Role"
+          required
+        ></p-dropdown>
+        <label for="role">Role</label>
+      </div>
+  
+   
+      <div class="p-field">
+        <button pButton type="submit" class="btn-submit" [disabled]="userForm.invalid">Submit</button>
+      </div>
+  
